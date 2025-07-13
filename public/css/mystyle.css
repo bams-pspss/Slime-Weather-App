@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap");
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom, #87CEEB, #ADD8E6);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 2;
+    position: relative;
+}
+
+.bg {
+    z-index: 0;
+}
+
+.bg2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cloud {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/img/bg/Cloud/Cloud-Origin.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.ground {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/img/bg/Ground/Ground-Origin.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 3%;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.img {
+    margin-top: 50%;
+    bottom: 0;
+
+}
+
+.slime {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 400px;
+    height: auto;
+
+}
+
+.button button {
+    margin-bottom: 2.5%;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+h3,
+h6,
+p {
+    margin: 0;
+}
+
+.info h6 {
+    font-size: 18px;
+}
+
+.info h3 {
+    font-size: 30px;
+}
+
+.info h1 {
+    font-size: 80px;
+}
+
+.info p {
+    font-size: 20px;
+}

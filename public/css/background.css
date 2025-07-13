@@ -1,0 +1,8 @@
+.dawn {}
+
+.afternoon {}
+
+.dark-mode {
+    background-image: linear-gradient(to bottom, #111314, #222e32);
+    columns: white;
+}

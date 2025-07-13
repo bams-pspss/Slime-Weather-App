@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slime - Weather App</title>
+    <link rel="stylesheet" href="/css/mystyle.css" />
+    <link rel="stylesheet" href="/css/background.css" />
+
+  </head>
+  <body>
+ 
+    <div class="bg2"> 
+      <div class="cloud"> </div>
+      <div class="ground"> </div>
+    </div>
+    <div class="container">
+      <div class="nav-bar">
+
+      </div>
+
+      <div class="info" id="info">
+          <h6><%= data.date %></h6>
+          <h6>MY LOCATION</h6>
+          <h3><%= data.place%></h3>
+          <h1><%= data.temp %>°C</h1>
+          <p>Feels like: <%= data.feelsLike %>°C</p>
+          <p>Weather: <%= data.weatherDesc %></p>
+      </div>
+
+      <div class="img">
+          <img class="slime" id="slime" onmouseenter="move()" onmouseleave="ideal()" src="<%= data.picture %>" alt="slime!"/>
+      </div>
+      <div class="button">
+        <button onclick="slimeChange('blue')">Sunny</button>
+        <button onclick="slimeChange('purple')">Rainy</button>
+        <button onclick="slimeChange('white')">Snowy</button>
+        <button onclick="slimeChange('grey')">Cloudy</button>
+        <button onclick="slimeChange('yellow')">Thunderstorm</button>
+        <br>
+      </div>
+    </div>
+    <script src="/script/myscript.js"></script>
+  </body>
+</html>
