@@ -72,10 +72,6 @@ class WeatherController {
 
             }
 
-
-            // ideal = './img/thunder.jpg';
-
-
             this.rawData = {
                 date: date,
                 temp: (data.main.temp - diff),
@@ -87,7 +83,6 @@ class WeatherController {
                 bgColor
             }
 
-            console.log(this.rawData);
             return {
                 date: readable,
                 temp: Math.floor(data.main.temp - diff),
@@ -98,7 +93,6 @@ class WeatherController {
                 bgColor
             };
         } catch (error) {
-            console.log(error);
             throw new Error("Could not fetch weather data");
         }
     };

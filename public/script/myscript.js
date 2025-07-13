@@ -88,9 +88,9 @@ async function getLocation() {
     });
 }
 async function main() {
-    // await getLocation();
-    // changeBG();
-    // changeBGRealtime();
+    await getLocation();
+    changeBG();
+    changeBGRealtime();
 }
 
 main();

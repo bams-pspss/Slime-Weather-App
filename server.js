@@ -11,8 +11,6 @@ app.set('view engine', 'ejs');
 app.get('/', async (req, res) => {
     const lat = 13.7563;
     const long = 100.5018;
-    // const picture = '/img/grey/grey.gif'
-    // res.render('index.ejs', { data: picture });
     try {
         const data = await weatherController.getWeather(lat, long);
         console.log("Weather data:", data);
@@ -33,11 +31,6 @@ app.post('/', async (req, res) => {
     }
 });
 
-//app.get('/', weatherController.getWeather); 
-
-app.get('/todolist', (req, res) => {
-    res.render('todolist.ejs');
-})
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
