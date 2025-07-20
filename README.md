@@ -12,6 +12,10 @@
 **Slimy Weather App** is a fun and simple Node.js + Expres web app that fetches real-time weather data from OpenWeatherMap and displays it with a cute SLIME-THEMED graphics (inspired by most of the anime I watch recently 😎). <br>
 This project is a personal creation where I took what I learned in college and turned it into a real-world application — combining practical coding with a touch of creativity!
 
+## 🎯 Purpose of the App
+I want place to express my new skill on **ASPRITE**, drawing is one of my big side quest that I want to master! In order to make application colorful and fun for boring app!
+I think weather application with slime reaction is COOOL! This application will update more with background that match with the weather, but for now **PLEASE ENJOY MY LITTLE SLIME!**
+
 ### 🤩 How to Use:
 1.  **Clone or Download** the project
 2.  **Open the folder** in any of your comfort IDE
